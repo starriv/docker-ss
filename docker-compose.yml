@@ -1,0 +1,14 @@
+version: '3'
+services:
+  shadowsocksr:
+    build: .
+    image: shadowsocksr
+    container_name: shadowsocksr_server
+    ports:
+      - "50080:50080"
+    environment:
+      - SSR_SERVER_PORT=50080
+      - SSR_PASSWORD=1q2w3e4r
+      - SSR_METHOD=aes-128-cfb
+      - SSR_PROTOCOL=auth_aes128_md5
+      - SSR_OBFS=tls1.2_ticket_auth_compatible
