@@ -8,7 +8,7 @@ docker pull starriv/shadowsocksr
 docker run starriv/shadowsocksr:latest -name shadowsocksr -p 50080:50080
 ```
 
-0x2: 从当前项目构建
+0x2: 从当前项目构建(docker-native)
 ```
 git clone https://github.com/starriv/docker-ssr.git
 cd docker-ssr
