@@ -1,8 +1,8 @@
-version: "3"
+version: "3.7"
 services:
   shadowsocks:
     image: shadowsocks/shadowsocks-libev
-    container_name: shadowsocks-server
+    container_name: proxy-server
     ports:
       - "3306:3306"
     env_file: .env
