@@ -2,8 +2,8 @@ version: '3'
 services:
   shadowsocksr:
     build: .
-    image: shadowsocksr
-    container_name: shadowsocksr_server
+    image: shadowsocks/shadowsocks-libev
+    container_name: shadowsocks-server
     ports:
-      - "50080:50080"
+      - "3306:3306"
     env_file: .env  
