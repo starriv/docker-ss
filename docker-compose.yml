@@ -1,9 +1,8 @@
-version: '3'
+version: "3"
 services:
-  shadowsocksr:
-    build: .
+  shadowsocks:
     image: shadowsocks/shadowsocks-libev
     container_name: shadowsocks-server
     ports:
       - "3306:3306"
-    env_file: .env  
+    env_file: .env
